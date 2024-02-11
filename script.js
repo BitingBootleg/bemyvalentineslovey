@@ -18,8 +18,8 @@ noButton.addEventListener("click", function () {
     noCount++;
     const imageIndex = Math.min(noCount, MAX_IMAGES);
     changeImage(imageIndex);
-    resizeYesButton();
-    updateNoButtonText( innerWidth: 800 px);
+    resizeYesButton( innerwidth: 800 );
+    updateNoButtonText();
     if (noCount === MAX_IMAGES) {
       play = false;
     }
@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! :3";
+  titleElement.innerHTML = "Yayyy!! i love you and we'll surely have a great date night together :>";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
