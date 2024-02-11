@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 8;
+const MAX_IMAGES = 5;
 
 let play = true;
 let noCount = 0;
@@ -48,9 +48,6 @@ function generateMessage(noCount) {
     "don't do this to me :(",
     "you're breaking my heart",
     "i cri",
-    ":<",
-    "NOOOOOOOO >:<",
-    "you're kidding right?",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
