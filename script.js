@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 5;
+const MAX_IMAGES = 8;
 
 let play = true;
 let noCount = 0;
@@ -18,7 +18,7 @@ noButton.addEventListener("click", function () {
     noCount++;
     const imageIndex = Math.min(noCount, MAX_IMAGES);
     changeImage(imageIndex);
-    resizeYesButton();
+    resizeYesButton(innerWidth: 800 );
     updateNoButtonText();
     if (noCount === MAX_IMAGES) {
       play = false;
@@ -43,11 +43,14 @@ function resizeYesButton() {
 function generateMessage(noCount) {
   const messages = [
     "No",
-    "Are you sure?",
-    "Lovey please",
-    "Don't do this to me :(",
-    "You're breaking my heart",
-    "I'm gonna cry...",
+    "are you sure?",
+    "lovey please",
+    "don't do this to me :(",
+    "you're breaking my heart",
+    "i cri",
+    ":<",
+    "NOOOOOOOO >:<",
+    "you're kidding right?",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
