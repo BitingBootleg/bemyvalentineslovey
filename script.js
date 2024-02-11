@@ -19,7 +19,7 @@ noButton.addEventListener("click", function () {
     const imageIndex = Math.min(noCount, MAX_IMAGES);
     changeImage(imageIndex);
     resizeYesButton();
-    updateNoButtonText();
+    updateNoButtonText( innerWidth: 800 );
     if (noCount === MAX_IMAGES) {
       play = false;
     }
@@ -37,7 +37,7 @@ function resizeYesButton() {
   const fontSize = parseFloat(computedStyle.getPropertyValue("font-size"));
   const newFontSize = fontSize * 1.6;
 
-  yesButton.style.fontSize = `${newFontSize} 20 px`;
+  yesButton.style.fontSize = `${newFontSize}px`;
 }
 
 function generateMessage(noCount) {
