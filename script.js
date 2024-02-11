@@ -58,6 +58,6 @@ function changeImage(image) {
   catImg.src = `img/cat-${image}.jpg`;
 }
 
-function updateNoButtonText(innerWidth: 800) {
+function updateNoButtonText() {
   noButton.innerHTML = generateMessage(noCount);
 }
