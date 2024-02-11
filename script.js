@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 5;
+const MAX_IMAGES = 8;
 
 let play = true;
 let noCount = 0;
@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "YAYYYYYYY!!!we're gonna have the best valentines date ever!!  :>";
+  titleElement.innerHTML = "Yayyy!! :3";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -36,7 +36,6 @@ function resizeYesButton() {
   const computedStyle = window.getComputedStyle(yesButton);
   const fontSize = parseFloat(computedStyle.getPropertyValue("font-size"));
   const newFontSize = fontSize * 1.6;
-  
 
   yesButton.style.fontSize = `${newFontSize} 20 px`;
 }
@@ -49,6 +48,9 @@ function generateMessage(noCount) {
     "don't do this to me :(",
     "you're breaking my heart",
     "i cri",
+    "NOOOOO",
+    ":<",
+    "you're kidding me right :<"
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
